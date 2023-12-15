@@ -7,7 +7,7 @@ const compileJs = require('gulp-babel');
 const minifyJs = require('gulp-uglify');
 const concat = require('gulp-concat');
 const minifyCss = require('gulp-clean-css');
-const compileSass = require('gulp-sass');
+const compileSass = require('gulp-sass')(require('sass'));
 compileSass.compiler = require('node-sass');
 const server = require('browser-sync').create();
 
